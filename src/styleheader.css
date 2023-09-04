@@ -1,0 +1,65 @@
+.changecolor{
+color: red;
+    animation: anmition 5s infinite 2s;
+    
+}
+
+@keyframes anmition {
+    0%{
+        color: red;
+    }
+    20%{
+        color: green;
+    }
+    40%{
+        color: blue;
+    }
+    50%{
+        color: aqua;
+    }
+    70%{
+        color: white;
+    }
+    80%{
+        color: yellow;
+    }
+    100%{
+        color: blueviolet;
+    }
+    
+}
+
+.underline{
+    position:relative;
+}
+
+.underline::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    bottom: 10%;
+    left: 10%;
+    background: brown;
+    transition: .25s all;
+}
+
+.underline:hover::after{
+    position: absolute;
+    content: "";
+    width: 55%;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 991px) {
+    .underline:hover::after{
+        position: absolute;
+        content: "";
+        width: 0%;
+        cursor: pointer;
+        
+    }
+    
+}
+

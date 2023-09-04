@@ -1,0 +1,9 @@
+.grid{
+    grid-gap: 30px 11px;
+}
+.grid2{
+    grid-gap: 0px 47px;
+}
+.pointer{
+    cursor: pointer;
+}
