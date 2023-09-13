@@ -8,7 +8,7 @@ import { Button } from "react-bootstrap";
 const Shop = ({ data, addtocard }) => {
   return (
     <div className="container mt-5 pt-5">
-      <div className="row grid3">
+      <div className="row grid3 d-flex justify-content-center">
         {data.map((product) => (
           <Card
             key={product.id}
